@@ -1,5 +1,5 @@
 import { StatusBar as ExpoStatusBar } from 'expo-status-bar';
-import { StatusBar, SafeAreaView, StyleSheet, Text, View, Platform } from 'react-native';
+import { StatusBar, SafeAreaView, StyleSheet, Text, View } from 'react-native';
 
 export default function App() {
   return (
@@ -12,7 +12,7 @@ export default function App() {
           <Text>List</Text>
         </View>
       </SafeAreaView>
-      <ExpoStatusBar style='auto' />
+      <ExpoStatusBar style="auto" />
     </>
   );
 }
