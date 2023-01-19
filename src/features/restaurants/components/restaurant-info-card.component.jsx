@@ -5,6 +5,7 @@ import { Avatar, Button, Card } from 'react-native-paper';
 
 const Title = styled.Text`
   padding: ${(props) => props.theme.space[3]};
+  font-family: ${(props) => props.theme.fonts.body};
 `;
 const RestaurantCard = styled(Card)`
   background-color: ${(props) => props.theme.colors.bg.primary};
