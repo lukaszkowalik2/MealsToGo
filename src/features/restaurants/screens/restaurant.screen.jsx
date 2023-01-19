@@ -5,14 +5,14 @@ import { Searchbar } from 'react-native-paper';
 import { RestaurantInfoCard } from '../components/restaurant-info-card.component';
 
 const SearchBarView = styled.View`
-  padding: 16px;
+  padding: ${(props) => props.theme.space[3]};
 `;
 const SafeArea = styled(SafeAreaView)`
   flex: 1;
-  margin-top: ${StatusBar.currentHeight}px;
+  ${StatusBar.currentHeight && `margin-top: ${StatusBar.currentHeight}px`};
 `;
 const CardView = styled.View`
-  padding: 16px;
+  padding: ${(props) => props.theme.space[3]};
   flex: 1;
 `;
 export const RestaurantScreen = () => {
