@@ -2,32 +2,13 @@ import React from 'react';
 import { StatusBar as ExpoStatusBar } from 'expo-status-bar';
 import { StatusBar, SafeAreaView, StyleSheet, Text, View } from 'react-native';
 import { Searchbar } from 'react-native-paper';
+import { RestaurantScreen } from './src/features/restaurants/screens/restaurant.screen';
 
 export default function App() {
-  const [searchQuery, setSearchQuery] = React.useState('');
-  const onChangeSearch = (query) => setSearchQuery(query);
   return (
     <>
-      <SafeAreaView style={{ flex: 1, marginTop: StatusBar.currentHeight }}>
-        <View style={styles.containerGreen}>
-          <Searchbar placeholder="Search" onChangeText={onChangeSearch} value={searchQuery} />
-        </View>
-        <View style={styles.containerBlue}>
-          <Text>List</Text>
-        </View>
-      </SafeAreaView>
+      <RestaurantScreen />
       <ExpoStatusBar style="auto" />
     </>
   );
 }
-
-const styles = StyleSheet.create({
-  containerGreen: {
-    padding: 16,
-  },
-  containerBlue: {
-    backgroundColor: 'blue',
-    padding: 16,
-    flex: 1,
-  },
-});
