@@ -20,7 +20,7 @@ export const RestaurantInfoCard = ({ restaurant = {} }) => {
     name = 'Some Restaurant',
     icon,
     photos = ['https://images.aws.nestle.recipes/resized/2020_04_03T13_58_53_image_1500_700.ashx'],
-    adress = '100 some random street',
+    address = '100 some random street',
     isOpenNow = true,
     rating = 4,
     isClosedTemporarily = true,
@@ -47,7 +47,7 @@ export const RestaurantInfoCard = ({ restaurant = {} }) => {
             </Spacer>
           </SectionEnd>
         </Section>
-        <Adress>{adress}</Adress>
+        <Adress>{address}</Adress>
       </Info>
     </RestaurantCard>
   );
